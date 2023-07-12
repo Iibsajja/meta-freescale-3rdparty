@@ -16,13 +16,13 @@ jobs:
           fetch-depth: 0
       - name: Create backport PRs
         # Should be kept in sync with `version`
-        uses: zeebe-io/backport-action@v0.0.4
+        uses: zeebe-io/backport-action@v1.1.1
         with:
           # Required
           # Version of the backport-action
           # Must equal the version in `uses`
           # Recommended: latest tag or `master`
-          version: v0.0.4
+          version: v1.1.1
 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_workspace: ${{ github.workspace }}
